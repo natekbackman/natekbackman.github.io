@@ -224,10 +224,29 @@
       <div class="project-card">
         <h3>Project 1: Darvishism</h3>
         <div class="placeholder">
-          <!-- TODO: Detailed description of Project 1. -->
-          [Detailed description of Project 1 — goals, tools used, your role, outcomes, lessons learned.]
-          
-          <br>
+          The goal fo this project was to analyze the effects of adding or subtracting pitches from a pitcher's arsenal for pitchers in Major League Baseball.
+          <br><br>
+
+          In order to assess the effectiveness of the pitcher's current arsenal, the following methodology was established:
+
+          <ul>
+            <li>Develop a model to measure "deception": the pitcher's ability to miss the barrel of the bat</li>
+            <li>Create an ordinal gradient boosting model that uses three ordered classes for its dependent variable (whiff, weak contact, barrel + sweet spot)</li>
+            <li>Determine a "deception score" and place these scores in a matrix showing each pitch and its effectiveness off of another pitch in the repertoire</li>
+          </ul>
+
+          In order to determine how effective adding a new pitch would be, the following methodology was established for projecting a new pitch shape for a given pitcher:
+
+          <ul>
+            <li>Generate similarity scores for each pitcher, based upon pitch usage, pitch shapes, and arm angles</li>
+            <li>Calculate arm angles for each pitcher using release point and DBSCAN to fine-tune the calculations</li>
+            <li>Train an XGBoost Regression model on the 60 most similar pitchers that throw the target pitch to project the velocity, x and y movement of the target pitch</li>
+          </ul>
+
+          In order to analyze the effects of adding or subtracting pitches from a pitcher's arsenal, the marginal effects of adding another pitch to the repertiore were calculated using OLS. <br>
+
+          The final produce saw a "deception matrix" that reflected an arsenal grade and highlighted how the arsenal might be impacted by adding or subtracting a pitch.
+
           <br>
           Check out the project here:
           <a href="https://github.com/natekbackman/Darvishism">Darvishism Repository</a>
@@ -237,8 +256,18 @@
       <div class="project-card">
         <h3>Project 2: Baseball Cinematography</h3>
         <div class="placeholder">
-          <!-- TODO: Detailed description of Project 2. -->
-          [Detailed description of Project 2 — goals, tools used, your role, outcomes, lessons learned.]
+          The goal of this project was to leverage open source Computer Vision models to track the biomechanics of pitchers in Major League Baseball. Once tracked, this data would be analyzed through time series analysis for multiple purposes.
+          <br>
+          The result of this project saw the creation of a pipeline that would effectively scrape the video from MLB's website, run the trained CV model on the video, and output the tracked biomechanical data to be analyzed.
+          <br>
+          The biggest takeaways I had from this project were:
+
+          <ul>
+            <li>Learning how to utilize open source computer vision models</li>
+            <li>Track and recreate the biomechanics of a pitcher as shown on the broadcast feed, with relatively strong accuracy</li>
+            <li>The nature of big data in the context of biomechanical tracking</li>
+          </ul>
+          
           <br>
           <br>
           Check out the project here:
@@ -249,9 +278,11 @@
       <div class="project-card">
         <h3>Project 3: CBB Scraper with Lineups</h3>
         <div class="placeholder">
-          <!-- TODO: Detailed description of Project 3. -->
-          [Detailed description of Project 3 — goals, tools used, your role, outcomes, lessons learned.]
+          This project was forked from another project on GitHub. The original project set up a scraping package that would extract all college basketball data from ESPN's website.
           <br>
+          I chose to add-on to this project because there was more information from the website (specifically the play-by-play pages) that I wanted to extract and save in the output dataset.
+          <br>
+          The result of this project saw the deployment of a forked package that if cloned in a Python environment would output the same information as the previous, along with extra context for play-by-play information, most notably substitutions.
           <br>
           Check out the project here:
           <a href="https://github.com/natekbackman/CBBpy_w_lineups">Forked CBB Scraper Repository</a>
