@@ -224,7 +224,7 @@
       <div class="project-card">
         <h3>Project 1: Darvishism</h3>
         <div class="placeholder">
-          The goal fo this project was to analyze the effects of adding or subtracting pitches from a pitcher's arsenal for pitchers in Major League Baseball.
+          The goal for this project was to analyze the effects of adding or subtracting pitches from a pitcher's arsenal for pitchers in Major League Baseball.
           <br><br>
 
           In order to assess the effectiveness of the pitcher's current arsenal, the following methodology was established:
@@ -243,11 +243,12 @@
             <li>Train an XGBoost Regression model on the 60 most similar pitchers that throw the target pitch to project the velocity, x and y movement of the target pitch</li>
           </ul>
 
-          In order to analyze the effects of adding or subtracting pitches from a pitcher's arsenal, the marginal effects of adding another pitch to the repertiore were calculated using OLS. <br>
+          In order to analyze the effects of adding or subtracting pitches from a pitcher's arsenal, the marginal effects of adding another pitch to the repertiore were calculated using OLS.
+          <br><br>
 
           The final produce saw a "deception matrix" that reflected an arsenal grade and highlighted how the arsenal might be impacted by adding or subtracting a pitch.
-
-          <br>
+          <br><br>
+          
           Check out the project here:
           <a href="https://github.com/natekbackman/Darvishism">Darvishism Repository</a>
         </div>
@@ -257,9 +258,11 @@
         <h3>Project 2: Baseball Cinematography</h3>
         <div class="placeholder">
           The goal of this project was to leverage open source Computer Vision models to track the biomechanics of pitchers in Major League Baseball. Once tracked, this data would be analyzed through time series analysis for multiple purposes.
-          <br>
+          <br><br>
+          
           The result of this project saw the creation of a pipeline that would effectively scrape the video from MLB's website, run the trained CV model on the video, and output the tracked biomechanical data to be analyzed.
-          <br>
+          <br><br>
+          
           The biggest takeaways I had from this project were:
 
           <ul>
@@ -267,9 +270,7 @@
             <li>Track and recreate the biomechanics of a pitcher as shown on the broadcast feed, with relatively strong accuracy</li>
             <li>The nature of big data in the context of biomechanical tracking</li>
           </ul>
-          
-          <br>
-          <br>
+
           Check out the project here:
           <a href="https://github.com/natekbackman/Baseball-Cinematography">Baseball Cinematography Repository</a>
         </div>
@@ -279,11 +280,14 @@
         <h3>Project 3: CBB Scraper with Lineups</h3>
         <div class="placeholder">
           This project was forked from another project on GitHub. The original project set up a scraping package that would extract all college basketball data from ESPN's website.
-          <br>
+          <br><br>
+          
           I chose to add-on to this project because there was more information from the website (specifically the play-by-play pages) that I wanted to extract and save in the output dataset.
-          <br>
+          <br><br>
+          
           The result of this project saw the deployment of a forked package that if cloned in a Python environment would output the same information as the previous, along with extra context for play-by-play information, most notably substitutions.
-          <br>
+          <br><br>
+          
           Check out the project here:
           <a href="https://github.com/natekbackman/CBBpy_w_lineups">Forked CBB Scraper Repository</a>
         </div>
@@ -313,55 +317,109 @@
     <!-- ============================= -->
     <section id="blog">
       <h2>Blog Post — Reflections on the Program</h2>
-      <p style="color: var(--muted);"><em>~3,000 words</em></p>
 
       <h3>What I Expected to Learn in the Program</h3>
       <div class="placeholder">
-        <!-- TODO: Reflect on your expectations coming into the program. -->
-        [Your expectations going in.]
+        I entered the Applied Data Science program in the iSchool having done many sport-focused data science projects during my time in undergraduate studies. 
+        One of the biggest issues I encountered while working on these projects was finding datasets that properly captured the fields I wanted to incorporate into my models. 
+        As such, I found myself spending most of my time extracting data from various sources and ensuring that my projects had high data integrity and quality. 
+        This ultimately led to me selecting the Data Pipelines and Management concentration for my track in the Applied Data Science program. 
+        The biggest expectation I had when entering this program was finding an opportunity to familiarize myself a lot more with different ways of managing data,
+        particularly big data as I found myself getting more and more exposure to large datasets and structures.
       </div>
 
       <h3>What I Learned in the Program</h3>
       <div class="placeholder">
-        <!-- TODO: Overall summary of what you learned. -->
-        [Overall summary.]
+        Having a foundation in data science helped me transition to a more data management focused track, 
+        as I generally knew what the endpoint for data extraction/manipulation processes should look like in order to begin the data science process. 
+        With this background, the skills I learned while in the program were not extremely difficult for me to wrap my head around conceptually. 
+        The main skills I learned in this program include how to orchestrate an ETL/ELT pipeline, 
+        how to work with various database management software and services (such as MongoDB, Cassandra, Spark, etc), 
+        and how to structure a relational DBMS with good practices that will allow for easier downstream updates as well as a solid UI/UX.
       </div>
 
       <h4>Achieving Each Learning Outcome</h4>
       <div class="placeholder">
-        <!-- TODO: For each learning outcome, explain how you achieved it. -->
-        [Learning Outcome 1 — how you achieved it.]
-        [Learning Outcome 2 — how you achieved it.]
-        [Learning Outcome 3 — how you achieved it.]
-        [Learning Outcome 4 — how you achieved it.]
-        [Learning Outcome 5 — how you achieved it.]
-        [Learning Outcome 6 — how you achieved it.]
+        The first learning outcome talks about demonstrating an ability to collect, store, and access data through applicable technologies. 
+        Through both the classes I have taken, as well as the projects I have worked on outside of school, I have shown ability to accomplish this. 
+        My IST 769 class discussed these aspects of data management from each perspective, giving me a solid understanding of how and when to leverage these different services. 
+        My work on the forked CBB scraper as well as my "Baseball Cinematography" project also help showcase my ability in this learning outcome. 
+        The forked CBB scraper highlights an understanding of how to scrape desired information from a webpage while the "Baseball Cinematography" project develops a full end-to-end pipeline that extracts data from a scraped video file.
+        <br><br>
+        
+        The second learning outcome talks about creating actionable insights across a range of contexts using data and the full data science life cycle. 
+        The project I worked on that highlights this the greatest is my work on "Darvishism." 
+        The result of this project saw the creation of an application that would allow users to add or remove pitch types from a pitcher's repertiore and assess how that change might influence the pitcher's overall "deception" using the models developed for this purpose. 
+        In creating an application, this allowed the results of this project to be easilyy translatable to the target audience, demonstrating a proficiency in creating actionable insight using the full data science life cycle. 
+        <br><br>
+        
+        The third learning outcome talks about applying visualization and predictive models to help generate actionable insights. 
+        My work on both "Darvishism" and "Baseball Cinematography" both showcase my ability to achieve this. 
+        "Darvishism" utilized mutliple predictive modeling frameworks while "Baseball Cinematography" leveraged deep learning and produced visualizations to help validate the results of those complex networks. 
+        In both projects, the results were interpreted in such a way that would allow for actionable insights to be gleaned. 
+        <br><br>
+        
+        The fourth learning outcome mentions the use of programming languages such as R or Python to support the generation of actionable insight. 
+        All data-centered projects I have worked on used both R and Python extensively in order to reach their conclusions. 
+        Different use-cases necessitate the use of different programming languages, and through my projects I have shown the ability to not only program in both R and Python, 
+        but also utilize the proper language for the right scenario. 
+        For example, computing a deep learning model to extract frame-by-frame data would be inefficient in R, but has a lot of support in Python, and thus was the language of choice when completing "Baseball Cinematography." 
+        <br><br>
+        
+        The fifth learning outcome mentions communicating insights gained via visualization and analytics to a broad range of audiences. 
+        Once again, my work on "Darvishism" and "Baseball Cinematography" highlights my ability to achieve this. 
+        As mentioned earlier, the result of the "Darvishism" project yielded an application that would allow users to use the computed calculations in order to assess the effectiveness of adding or subtracting a pitch from a pitcher's repertiore. 
+        The application's use of a matrix and color gradients to identify stronger or weaker pitch pairings allowed the communicated results to be very easily interpreted. 
+        The presentation given for "Baseball Cinematography" also uses numerous visuals to help give an understanding about the underlying algorithms being used in the time series analysis of the extracted biomechanical data points. 
+        Despite being a highly technical project, these visuals help to better communicate how best to interpret the results of the project. 
+        <br><br>
+        
+        The final learning outcome discusses applying ethics in the development, use, and evaluation of data and predictive models. 
+        Because my projects are mostly sport-focused, there isn't too much of an issue from an ethical standpoint, particularly in the case of bias or privacy. 
+        However, my "Baseball Cinematography" project included a caution about the use of AI and its place in the data science world. 
+        When I presented this, the main point I was looking to make was to identify how the advancement of AI could overtake the thought process that goes on behind large data science projects such as this one. 
+        My biggest caution and recommendation was to leverage AI as a tool in the research process as opposed to being the research process.
       </div>
 
       <h4>Three Projects and Their Contributions to My Education</h4>
       <div class="placeholder">
-        <!-- TODO: Briefly describe 3 projects and what each contributed. -->
-        [Project 1 — contribution to your education.]
-        [Project 2 — contribution to your education.]
-        [Project 3 — contribution to your education.]
+        Project 1 - Fantasy Baseball Database Architecture
+        <br><br>
+        
+        Project 2 - Scripting an NCAA MBB play-by-play Scraper
+        <br><br>
+        
+        Project 3 - Assessing the Competitive Differences Between Conferences in NCAA D1 MBB
       </div>
 
-      <h4>Internship / iConsult / Outside-the-Classroom Experiences</h4>
+      <h4>Internship Experience</h4>
       <div class="placeholder">
-        <!-- TODO: Describe internships, iConsult, or outside projects (if applicable). -->
-        SUMBB - Head Data Engineer
+        During my time in this program, I was fortunate enough to intern with the Syracuse Men's Basketball Team as the Head Data Engineer. 
+        In this role, I was tasked with a lot of back-end projects that centered around data extraction and UI building for stakeholders. 
+        Two of the projects I completed in my time in this role were an automated scraper that would collect all data from every college basketball game at the end of each day. 
+        This project funneled into another project which I would consider my biggest achievement in this role, which was the creation of a scouting app that allowed users to be able to submit comments and visualize different statistics about each player.
       </div>
 
       <h3>My Favorite Class</h3>
       <div class="placeholder">
-        <!-- TODO: Name your favorite class and explain why. -->
-        IST 769 - Advanced Data Management
+        My favorite class from this program was IST 769, or Advanced Big Data Management. 
+        The reason this was my favorite class is because of the content that was covered in it. 
+        Each week looked at a different database management service and discussed its architecture as well as how it could read/write data. 
+        This class was extremely useful for my overall education and expanding my tool belt as a data engineer, as it not only exposed me to a myriad of services, but also showed the various different ways in which data could be stored. 
+        As someone who was looking to improve in the field of data engineering, this class was right up my alley. 
       </div>
 
       <h3>Best Part of the Program &amp; Biggest Surprises</h3>
       <div class="placeholder">
-        <!-- TODO: Reflect on the best part of the program and any surprises. -->
-        [Best part of the program. Biggest surprises along the way.]
+        The best part of this program was being able to apply what I learned in my courses directly to my internship. 
+        Learning about various open-source services greatly expanded what I was able to do in the role of Head Data Engineer for the Syracuse Men's Basketball Team 
+        and greatly expanded the possibilities for future projects and reserach questions. 
+        In applying what I learned in my classes to this internship, I was able to attack projects from a different perspective and was ultimately able to see through projects that may have been stalled otherwise. 
+        <br><br>
+
+        The biggest surprise from this program was how in-depth the content was. 
+        A lot of the content was delivered via Mike Fudge videos, but I was impressed not only with how in-depth he was on these topics but also the range of topics in which he covered. 
+        Despite the constantly evolving world of data science, the content within this program managed to stay relevant, which is a huge benefit for the program as a whole.
       </div>
     </section>
 
