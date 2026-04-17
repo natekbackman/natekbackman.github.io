@@ -1,1 +1,328 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>[Your Name] — Program Portfolio</title>
+  <style>
+    :root {
+      --text: #1f2937;
+      --muted: #6b7280;
+      --accent: #2563eb;
+      --bg: #ffffff;
+      --surface: #f9fafb;
+      --border: #e5e7eb;
+    }
 
+    * { box-sizing: border-box; }
+
+    body {
+      margin: 0;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      color: var(--text);
+      background: var(--bg);
+      line-height: 1.6;
+    }
+
+    header.site-header {
+      background: var(--surface);
+      border-bottom: 1px solid var(--border);
+      padding: 2rem 1.5rem;
+      text-align: center;
+    }
+
+    header.site-header h1 {
+      margin: 0 0 0.5rem 0;
+      font-size: 2rem;
+    }
+
+    header.site-header p {
+      margin: 0;
+      color: var(--muted);
+    }
+
+    nav.site-nav {
+      position: sticky;
+      top: 0;
+      background: var(--bg);
+      border-bottom: 1px solid var(--border);
+      z-index: 10;
+    }
+
+    nav.site-nav ul {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 1.5rem;
+      margin: 0;
+      padding: 1rem;
+      list-style: none;
+    }
+
+    nav.site-nav a {
+      color: var(--text);
+      text-decoration: none;
+      font-weight: 500;
+    }
+
+    nav.site-nav a:hover {
+      color: var(--accent);
+    }
+
+    main {
+      max-width: 900px;
+      margin: 0 auto;
+      padding: 2rem 1.5rem;
+    }
+
+    section {
+      margin-bottom: 4rem;
+      scroll-margin-top: 80px;
+    }
+
+    section h2 {
+      font-size: 1.75rem;
+      border-bottom: 2px solid var(--accent);
+      padding-bottom: 0.5rem;
+      margin-top: 0;
+    }
+
+    section h3 {
+      font-size: 1.25rem;
+      margin-top: 2rem;
+      color: var(--text);
+    }
+
+    section h4 {
+      font-size: 1.05rem;
+      margin-top: 1.5rem;
+      color: var(--muted);
+    }
+
+    .placeholder {
+      background: var(--surface);
+      border: 1px dashed var(--border);
+      border-radius: 6px;
+      padding: 1rem 1.25rem;
+      color: var(--muted);
+      font-style: italic;
+    }
+
+    .project-card {
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      padding: 1.25rem 1.5rem;
+      margin-bottom: 1.5rem;
+      background: var(--bg);
+    }
+
+    .project-card h3 {
+      margin-top: 0;
+    }
+
+    .video-container {
+      position: relative;
+      padding-bottom: 56.25%; /* 16:9 */
+      height: 0;
+      overflow: hidden;
+      background: var(--surface);
+      border: 1px dashed var(--border);
+      border-radius: 6px;
+    }
+
+    .video-container iframe,
+    .video-container video {
+      position: absolute;
+      top: 0; left: 0;
+      width: 100%;
+      height: 100%;
+    }
+
+    footer.site-footer {
+      border-top: 1px solid var(--border);
+      padding: 2rem 1.5rem;
+      text-align: center;
+      color: var(--muted);
+      font-size: 0.9rem;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- ============================= -->
+  <!-- SITE HEADER                   -->
+  <!-- ============================= -->
+  <header class="site-header">
+    <h1>[Your Name]</h1>
+    <p>[Program Name] — Portfolio</p>
+  </header>
+
+  <!-- ============================= -->
+  <!-- NAVIGATION                    -->
+  <!-- ============================= -->
+  <nav class="site-nav">
+    <ul>
+      <li><a href="#overview">Overview</a></li>
+      <li><a href="#projects">Project Descriptions</a></li>
+      <li><a href="#video">Video Presentation</a></li>
+      <li><a href="#blog">Blog Post</a></li>
+    </ul>
+  </nav>
+
+  <main>
+
+    <!-- ============================= -->
+    <!-- A. OVERVIEW                   -->
+    <!-- ============================= -->
+    <section id="overview">
+      <h2>Overview</h2>
+
+      <h3>Program Learning Outcomes</h3>
+      <div class="placeholder">
+        <!-- TODO: Describe the program learning outcomes here. -->
+        [Describe the program learning outcomes.]
+      </div>
+
+      <h3>Portfolio Projects — High-Level Descriptions</h3>
+
+      <h4>Project 1: [Project Title]</h4>
+      <div class="placeholder">
+        <!-- TODO: High-level description of Project 1. -->
+        [Brief, high-level description of Project 1.]
+      </div>
+
+      <h4>Project 2: [Project Title]</h4>
+      <div class="placeholder">
+        <!-- TODO: High-level description of Project 2. -->
+        [Brief, high-level description of Project 2.]
+      </div>
+
+      <h4>Project 3: [Project Title]</h4>
+      <div class="placeholder">
+        <!-- TODO: High-level description of Project 3. -->
+        [Brief, high-level description of Project 3.]
+      </div>
+
+      <h3>How I Achieved the Program Learning Outcomes</h3>
+      <div class="placeholder">
+        <!-- TODO: Explain which projects demonstrated which learning outcomes. -->
+        [Explain how each project demonstrated specific program learning outcomes. Map outcomes to projects.]
+      </div>
+    </section>
+
+    <!-- ============================= -->
+    <!-- B. PROJECT DESCRIPTIONS       -->
+    <!-- ============================= -->
+    <section id="projects">
+      <h2>Project Descriptions</h2>
+
+      <div class="project-card">
+        <h3>Project 1: [Project Title]</h3>
+        <div class="placeholder">
+          <!-- TODO: Detailed description of Project 1. -->
+          [Detailed description of Project 1 — goals, tools used, your role, outcomes, lessons learned.]
+        </div>
+      </div>
+
+      <div class="project-card">
+        <h3>Project 2: [Project Title]</h3>
+        <div class="placeholder">
+          <!-- TODO: Detailed description of Project 2. -->
+          [Detailed description of Project 2 — goals, tools used, your role, outcomes, lessons learned.]
+        </div>
+      </div>
+
+      <div class="project-card">
+        <h3>Project 3: [Project Title]</h3>
+        <div class="placeholder">
+          <!-- TODO: Detailed description of Project 3. -->
+          [Detailed description of Project 3 — goals, tools used, your role, outcomes, lessons learned.]
+        </div>
+      </div>
+
+      <!-- Duplicate the .project-card block above for any additional projects. -->
+    </section>
+
+    <!-- ============================= -->
+    <!-- C. RECORDED VIDEO PRESENTATION -->
+    <!-- ============================= -->
+    <section id="video">
+      <h2>Recorded Video Presentation</h2>
+      <p class="placeholder">
+        <!-- TODO: Brief intro sentence for the video (optional). -->
+        [A 1–2 minute video summarizing my overall thoughts on the program and what I learned.]
+      </p>
+
+      <div class="video-container">
+        <!-- TODO: Replace with your video embed. Examples: -->
+        <!-- YouTube:  <iframe src="https://www.youtube.com/embed/VIDEO_ID" title="Program Reflection" frameborder="0" allowfullscreen></iframe> -->
+        <!-- Vimeo:    <iframe src="https://player.vimeo.com/video/VIDEO_ID" frameborder="0" allowfullscreen></iframe> -->
+        <!-- Local:    <video controls src="video/presentation.mp4"></video> -->
+      </div>
+    </section>
+
+    <!-- ============================= -->
+    <!-- D. BLOG POST                  -->
+    <!-- ============================= -->
+    <section id="blog">
+      <h2>Blog Post — Reflections on the Program</h2>
+      <p style="color: var(--muted);"><em>~3,000 words</em></p>
+
+      <h3>What I Expected to Learn in the Program</h3>
+      <div class="placeholder">
+        <!-- TODO: Reflect on your expectations coming into the program. -->
+        [Your expectations going in.]
+      </div>
+
+      <h3>What I Learned in the Program</h3>
+      <div class="placeholder">
+        <!-- TODO: Overall summary of what you learned. -->
+        [Overall summary.]
+      </div>
+
+      <h4>Achieving Each Learning Outcome</h4>
+      <div class="placeholder">
+        <!-- TODO: For each learning outcome, explain how you achieved it. -->
+        [Learning Outcome 1 — how you achieved it.]
+        [Learning Outcome 2 — how you achieved it.]
+        [Learning Outcome 3 — how you achieved it.]
+      </div>
+
+      <h4>Three Projects and Their Contributions to My Education</h4>
+      <div class="placeholder">
+        <!-- TODO: Briefly describe 3 projects and what each contributed. -->
+        [Project 1 — contribution to your education.]
+        [Project 2 — contribution to your education.]
+        [Project 3 — contribution to your education.]
+      </div>
+
+      <h4>Internship / iConsult / Outside-the-Classroom Experiences</h4>
+      <div class="placeholder">
+        <!-- TODO: Describe internships, iConsult, or outside projects (if applicable). -->
+        [Describe any internship, iConsult, or outside-the-classroom projects and how they contributed.]
+      </div>
+
+      <h3>My Favorite Class</h3>
+      <div class="placeholder">
+        <!-- TODO: Name your favorite class and explain why. -->
+        [Favorite class and the reasons why.]
+      </div>
+
+      <h3>Best Part of the Program &amp; Biggest Surprises</h3>
+      <div class="placeholder">
+        <!-- TODO: Reflect on the best part of the program and any surprises. -->
+        [Best part of the program. Biggest surprises along the way.]
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ============================= -->
+  <!-- FOOTER                        -->
+  <!-- ============================= -->
+  <footer class="site-footer">
+    <p>&copy; [Year] [Your Name]. All rights reserved.</p>
+  </footer>
+
+</body>
+</html>
